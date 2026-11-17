@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpet Shop</title>
+  <link rel="stylesheet" href="data.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <img src="logo.jpeg" alt="Logo">
+    </a>
+
+    <nav id="nav">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="nav-btn">Get a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="hero-tag">Handpicked Carpets &amp; Rugs</span>
+      <h1>Carpets That Make Every Room Feel Like Home</h1>
+      <p>
+        Discover soft, durable and beautifully designed carpets for your living room,
+        bedroom and office. Choose the style, size and color that fits your space.
+      </p>
+      <div class="hero-buttons">
+        <a href="#collection" class="btn btn-fill">Shop Now</a>
+        <a href="#collection" class="btn btn-line">View Collection</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="pictur.jpeg" alt="Beautiful carpet in a living room">
+    </div>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const nav = document.getElementById("nav");
+
+    menuBtn.addEventListener("click", () => nav.classList.toggle("open"));
+
+    nav.querySelectorAll("a").forEach(link =>
+      link.addEventListener("click", () => nav.classList.remove("open"))
+    );
+  </script>
+
+  <!-- COLLECTION SECTION -->
+<section class="collection" id="collection">
+  <div class="col-head">
+    <span class="col-tag">Our Collection</span>
+    <h2>Find Your Perfect Carpet</h2>
+    <p>Click on any carpet to see more details.</p>
+  </div>
+
+  <div class="col-grid">
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./persian.jpeg" alt="Classic Persian Carpet">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Traditional</span>
+        <h3>Classic Persian Carpet</h3>
+        <p class="col-short">Rich patterns and deep colors for a timeless look.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Soft wool-blend pile</li>
+            <li>Sizes: Small, medium and large</li>
+            <li>Colors: Maroon, gold, cream</li>
+            <li>Best for: Living rooms and guest rooms</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./geomatric.jpeg" alt="Modern Geometric Carpet">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Modern</span>
+        <h3>Modern Geometric Carpet</h3>
+        <p class="col-short">Clean lines and bold shapes for contemporary rooms.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Durable polypropylene</li>
+            <li>Sizes: Small, medium and large</li>
+            <li>Colors: Grey, beige, charcoal</li>
+            <li>Best for: Modern apartments and offices</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./plush shaggy.jpeg" alt="Plush Shaggy Carpet">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Cozy</span>
+        <h3>Plush Shaggy Carpet</h3>
+        <p class="col-short">Extra soft and fluffy, perfect for bedrooms.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Thick, soft microfiber</li>
+            <li>Sizes: Round and rectangular</li>
+            <li>Colors: Ivory, blush, sand</li>
+            <li>Best for: Bedrooms and reading corners</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./office.jpeg" alt="Office Carpet Tiles">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Commercial</span>
+        <h3>Office Carpet Tiles</h3>
+        <p class="col-short">Hard-wearing tiles that are easy to fit and replace.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Dense, stain-resistant fiber</li>
+            <li>Format: Square tiles, easy to replace</li>
+            <li>Colors: Grey, navy, brown</li>
+            <li>Best for: Offices, shops and showrooms</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./natural jute.jpeg" alt="Natural Jute Carpet">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Natural</span>
+        <h3>Natural Jute Carpet</h3>
+        <p class="col-short">Earthy texture with a calm, natural feel.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Woven natural jute</li>
+            <li>Sizes: Small, medium and large</li>
+            <li>Colors: Natural tan and light brown</li>
+            <li>Best for: Dining rooms and hallways</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+    <div class="col-card" role="button" tabindex="0" aria-expanded="false">
+      <div class="col-img">
+        <img src="./kids play.jpeg" alt="Kids Play Carpet">
+      </div>
+      <div class="col-body">
+        <span class="col-type">Kids</span>
+        <h3>Kids Play Carpet</h3>
+        <p class="col-short">Bright, soft and easy to clean for little ones.</p>
+        <div class="col-details">
+          <ul>
+            <li>Material: Soft, washable fabric</li>
+            <li>Sizes: Medium and large play mats</li>
+            <li>Colors: Bright multi-color designs</li>
+            <li>Best for: Kids' rooms and play areas</li>
+          </ul>
+          <a href="#contact" class="col-enquire">Enquire Now</a>
+        </div>
+        <span class="col-hint"><span class="hint-closed">Click to view details</span><span class="hint-open">Click to close</span></span>
+      </div>
+    </div>
+
+  </div>
+    
+
+
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+
+  <div class="about-wrap">
+
+    <!-- Image side -->
+    <div class="about-visual">
+      <div class="about-img">
+        <img src="./about.jpeg" alt="Our carpet showroom">
+      </div>
+      <div class="about-badge">
+        <strong>10+</strong>
+        <span>Years of Experience</span>
+      </div>
+    </div>
+
+    <!-- Text side -->
+    <div class="about-text">
+      <span class="about-tag">About Us</span>
+      <h2>Quality Carpets, Chosen With Care</h2>
+      <p>
+        We have carpet business, dedicated to helping homes and offices feel warm,
+        comfortable and beautifully furnished. From classic traditional designs to
+        clean modern styles, every carpet in our collection is selected for its
+        quality, durability and look.
+      </p>
+      <p>
+        Our goal is simple: to make choosing a carpet easy and enjoyable. We help you
+        find the right size, color and material for your space, at a fair price.
+      </p>
+
+      <ul class="about-points">
+        <li>
+          <span class="ap-icon">🧵</span>
+          <div>
+            <h4>Quality Materials</h4>
+            <p>Soft, durable carpets built to last.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ap-icon">🎨</span>
+          <div>
+            <h4>Wide Range of Designs</h4>
+            <p>Traditional, modern and everything between.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ap-icon">📏</span>
+          <div>
+            <h4>Right Size for You</h4>
+            <p>Help choosing the perfect fit for your room.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ap-icon">🤝</span>
+          <div>
+            <h4>Friendly Service</h4>
+            <p>Honest advice and support at every step.</p>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#contact" class="about-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="about-stats">
+    <div class="stat">
+      <strong><span class="count" data-count="9years" data-suffix="+">10+</span></strong>
+      <span>Years of Experience</span>
+    </div>
+    <div class="stat">
+      <strong><span class="count" data-count="5550 customers" data-suffix="+">5550+</span></strong>
+      <span>Happy Customers</span>
+    </div>
+    <div class="stat">
+      <strong><span class="count" data-count="100" data-suffix="+">100</span></strong>
+      <span>Carpet Designs</span>
+    </div>
+    <div class="stat">
+      <strong><span class="count" data-count="100" data-suffix="%">90</span></strong>
+      <span>Commitment to Quality</span>
+    </div>
+  </div>
+
+</section> 
+
+<!-- CONTACT SECTION -->
+<section class="ct" id="contact">
+  <div class="ct-head">
+    <span class="ct-tag">Get In Touch</span>
+    <h2>Contact Us</h2>
+    <p>Looking for the perfect carpet? Send us a message and we'll get back to you.</p>
+  </div>
+
+  <div class="ct-wrap">
+
+    <!-- Contact details -->
+    <div class="ct-info">
+      <h3>We'd Love To Hear From You</h3>
+      <p class="ct-intro">
+        Ask about our collection, sizes, colors or prices. We're happy to help you
+        choose the right carpet for your space.
+      </p>
+
+      <a href="mailto:carpetshop08@gmail.com" class="ct-card">
+        <span class="ct-icon">✉️</span>
+        <span class="ct-text">
+          <small>Email</small>
+          <strong>carpetshop08@gmail.com</strong>
+        </span>
+      </a>
+
+      <a href="tel:34324884643" class="ct-card">
+        <span class="ct-icon">📞</span>
+        <span class="ct-text">
+          <small>Contact Number</small>
+          <strong>34324884643</strong>
+        </span>
+      </a>
+
+      <div class="ct-card ct-static">
+        <span class="ct-icon">📍</span>
+        <span class="ct-text">
+          <small>Visit Us</small>
+          <strong>Add your shop address here</strong>
+        </span>
+      </div>
+
+      <button type="button" class="ct-copy" id="ctCopy">Copy Email Address</button>
+    </div>
+
+    <!-- Contact form -->
+    <form class="ct-form" id="ctForm" novalidate>
+      <h3>Send a Message</h3>
+
+      <div class="ct-field">
+        <label for="ctName">Your Name</label>
+        <input type="text" id="ctName" placeholder="Enter your name" required>
+      </div>
+
+      <div class="ct-field">
+        <label for="ctEmail">Your Email</label>
+        <input type="email" id="ctEmail" placeholder="Enter your email" required>
+      </div>
+
+      <div class="ct-field">
+        <label for="ctSubject">Subject</label>
+        <input type="text" id="ctSubject" placeholder="e.g. Question about a carpet">
+      </div>
+
+      <div class="ct-field">
+        <label for="ctMessage">Message</label>
+        <textarea id="ctMessage" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
+      </div>
+
+      <button type="submit" class="ct-send">Send Message</button>
+      <p class="ct-status" id="ctStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="shop-footer">
+  <p>&copy; <span id="ctYear"></span> Carpet Shop. All rights reserved.</p>
+  <p>carpetshop08@gmail.com | 34324884643</p>
+</footer><!-- CONTACT SECTION -->
+<section class="ct" id="contact">
+  <div class="ct-head">
+   
+  </div>
+
+  
+</footer> 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="sf-wrap">
+
+    <div class="sf-col sf-brand">
+      <a href="#home" class="sf-logo">Carpet <span>Shop</span></a>
+      <p>
+        Quality carpets and rugs for homes and offices. Soft, durable and
+        beautifully designed, at a fair price.
+      </p>
+    </div>
+
+    <div class="sf-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="sf-col">
+      <h4>Our Carpets</h4>
+      <ul>
+        <li><a href="#collection">Classic Persian</a></li>
+        <li><a href="#collection">Modern Geometric</a></li>
+        <li><a href="#collection">Plush Shaggy</a></li>
+        <li><a href="#collection">Office Carpet Tiles</a></li>
+        <li><a href="#collection">Natural Jute</a></li>
+        <li><a href="#collection">Kids Play Carpet</a></li>
+      </ul>
+    </div>
+
+    <div class="sf-col">
+      <h4>Get In Touch</h4>
+      <ul class="sf-contact">
+        <li><a href="mailto:carpetshop08@gmail.com">✉️ carpetshop08@gmail.com</a></li>
+        <li><a href="tel:34324884643">📞 34324884643</a></li>
+        <li><span>📍 Add your shop address here</span></li>
+      </ul>
+      <a href="#contact" class="sf-btn">Get a Quote</a>
+    </div>
+
+  </div>
+
+  <div class="sf-bottom">
+    <p>&copy; <span id="ctYear"></span> Carpet Shop. All rights reserved.</p>
+    <p>Quality Carpets for Every Room</p>
+  </div>
+
+  <button class="sf-top" id="sfTop" aria-label="Back to top">&#8593;</button>
+</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saba Fatima - AI Photo Generator, Photo Editor, Poster Designer and Remote Freelancer." />
+  <title>Saba Fatima | Remote Freelancer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Saba<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="eyebrow">Hello, I'm</span>
+          <h1>Saba Fatima</h1>
+          <h2 class="role">
+            <span id="typedText"></span><span class="cursor">|</span>
+          </h2>
+          <p>
+            I design scroll-stopping AI visuals, polished photo edits and bold posters, and I keep
+            your data clean and accurate. Reliable, punctual and detail-focused, I help small
+            businesses and creators look professional online.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#portfolio" class="btn btn-outline">View My Work</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong data-count="50">0</strong><span>Projects (placeholder)</span></li>
+            <li><strong data-count="30">0</strong><span>Happy Clients (placeholder)</span></li>
+            <li><strong data-count="100">0</strong><span>% Commitment</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="photo-frame">
+            <!--
+              YOUR PHOTO: save your picture in this same folder as "profile.jpg"
+              (or change the src below to your file name, e.g. "saba.png").
+              If the file is missing, the placeholder SVG is shown instead.
+            -->
+            <img
+              src="./pic.jpeg" 
+              alt="Portrait of Saba Fatima"
+              width="400"
+              height="400"
+              onerror="this.onerror=null; this.src='profile-placeholder.svg';"
+            />
+          </div>
+          <div class="float-badge badge-1">🎨 AI Images</div>
+          <div class="float-badge badge-2">✨ Photo Editing</div>
+          <div class="float-badge badge-3">📊 Data Entry</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get To Know Me</span>
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>Who I Am</h3>
+            <p>
+              I'm Saba Fatima, a remote freelancer based in Pakistan. I'm responsible, punctual and organized,
+              and I'm committed to delivering quality work that my clients are proud to use.
+              I enjoy turning ideas into clean, attractive visuals and keeping information tidy and accurate.
+            </p>
+            <p>
+              <!-- Edit this paragraph to add your own story -->
+              I'm at the start of my freelancing journey, and every project is a chance to learn,
+              improve and build long-term trust with the people I work with.
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>My Interests</h3>
+            <div class="chips">
+              <span>Presentation Design</span>
+              <span>Photo Editing</span>
+              <span>AI Image Creation</span>
+              <span>Poster Design</span>
+              <span>Data Organization</span>
+            </div>
+
+            <h3 class="mt">Professional Goals</h3>
+            <ul class="goal-list">
+              <li>Grow into a trusted, full-time remote freelancer</li>
+              <li>Master AI-powered design and image tools</li>
+              <li>Build a strong portfolio and long-term client relationships</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I Do</span>
+          <h2>My Services</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card reveal">
+            <div class="icon">🤖</div>
+            <h3>AI Image Generation</h3>
+            <p>Unique, high-quality AI visuals for social media, branding, products and creative projects.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">🖼️</div>
+            <h3>Visual Photo Editing</h3>
+            <p>Retouching, color correction, background cleanup and polished edits that make photos shine.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">📣</div>
+            <h3>Poster &amp; Flyer Design</h3>
+            <p>Bold, clear and attractive posters for events, promotions and small business marketing.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">⌨️</div>
+            <h3>Data Entry</h3>
+            <p>Fast, accurate and well-organized data entry, spreadsheets and document formatting.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">📽️</div>
+            <h3>Presentation Design</h3>
+            <p>Clean, professional slide decks that tell your story clearly and look great on screen.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">💼</div>
+            <h3>Remote Support</h3>
+            <p>Reliable, punctual and communicative remote help for your day-to-day creative tasks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What I'm Good At</span>
+          <h2>My Skills</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill reveal">
+            <div class="skill-top"><span>🤖 AI Photo Generation</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="90"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-top"><span>🖼️ Photo Editing</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="88"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-top"><span>📣 Poster Design</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="85"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-top"><span>⌨️ Data Entry</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="95"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-top"><span>📽️ Presentation Design</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="85"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill-top"><span>⏰ Time Management</span><span class="percent">0%</span></div>
+            <div class="bar"><div class="fill" data-percent="92"></div></div>
+          </div>
+        </div>
+
+        <div class="tool-row reveal">
+          <span>Responsible</span>
+          <span>Punctual</span>
+          <span>Organized</span>
+          <span>Quality-Focused</span>
+          <span>Great Communicator</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">My Recent Work</span>
+          <h2>Portfolio</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI Images</button>
+          <button class="filter-btn" data-filter="photo">Photo Editing</button>
+          <button class="filter-btn" data-filter="poster">Posters</button>
+          <button class="filter-btn" data-filter="data">Data &amp; Slides</button>
+        </div>
+
+        <!-- Replace each .thumb with: <img src="your-image.jpg" alt="Project title" /> -->
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card reveal" data-category="ai">
+            <div class="thumb t1"><span>🤖</span></div>
+            <div class="project-info">
+              <small>AI Images</small>
+              <h3>Product Mockup Series</h3>
+              <p>A set of AI-generated product visuals for a small online brand.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="photo">
+            <div class="thumb t2"><span>🖼️</span></div>
+            <div class="project-info">
+              <small>Photo Editing</small>
+              <h3>Portrait Retouching</h3>
+              <p>Skin retouching, lighting and color balance for a portrait shoot.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="poster">
+            <div class="thumb t3"><span>📣</span></div>
+            <div class="project-info">
+              <small>Posters</small>
+              <h3>Event Promotion Poster</h3>
+              <p>A bold, eye-catching poster designed for a local event.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ai">
+            <div class="thumb t4"><span>✨</span></div>
+            <div class="project-info">
+              <small>AI Images</small>
+              <h3>Social Media Visual Pack</h3>
+              <p>Consistent AI-created images for a month of social media posts.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data">
+            <div class="thumb t5"><span>📊</span></div>
+            <div class="project-info">
+              <small>Data &amp; Slides</small>
+              <h3>Spreadsheet Cleanup</h3>
+              <p>Organized and formatted hundreds of records with high accuracy.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data">
+            <div class="thumb t6"><span>📽️</span></div>
+            <div class="project-info">
+              <small>Data &amp; Slides</small>
+              <h3>Business Presentation</h3>
+              <p>A clean, professional slide deck built for a small business pitch.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Let's Work Together</span>
+          <h2>Contact Me</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Have a project in mind?</h3>
+            <p>Send me a message and I'll get back to you as soon as possible.</p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="c-icon">✉️</span>
+                <div>
+                  <small>Email</small>
+                  <a href="mailto:azadsaba2@gmail.com">azadsaba2@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="c-icon">📍</span>
+                <div>
+                  <small>Location</small>
+                  <span>Pakistan (Working Remotely)</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="socials">
+              <!-- Replace the # with your real profile links -->
+              <a href="#" aria-label="Instagram" title="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+              <a href="#" aria-label="Fiverr" title="Fiverr">Fi</a>
+              <a href="#" aria-label="Upwork" title="Upwork">Up</a>
+              <a href="#" aria-label="Facebook" title="Facebook">f</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full">Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Saba Fatima. All rights reserved.</p>
+      <p>Remote Freelancer · AI Photo Generator · Data Entry Specialist</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
